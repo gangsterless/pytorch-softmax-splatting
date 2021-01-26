@@ -27,8 +27,8 @@ you can clearly see some overlap and blur in the left.
 ## usage
 ### to simply test my code you should
 1 download my pretrained model from
-[baiduyun](https://pan.baidu.com/s/1IBZsjhQFM_QTlZTt9njDHQ )<br>
-keyword：bp7w <br>
+[baiduyun](https://pan.baidu.com/s/13qeFOQsrViCuskUWIdhVSQ)<br>
+keyword：4rtz <br>
 2 run :
 ```
 python run_a_pair.py

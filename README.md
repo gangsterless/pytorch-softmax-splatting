@@ -28,7 +28,7 @@ you can clearly see some overlap and blur in the left.
 ### to simply test my code you should
 1 download my pretrained model from
 [baiduyun](https://pan.baidu.com/s/13qeFOQsrViCuskUWIdhVSQ)<br>
-keyword：4rtz <br>
+password：4rtz <br>
 2 run :
 ```
 python run_a_pair.py
@@ -37,7 +37,7 @@ python run_a_pair.py
 1 download Vimeo <br>
 2 download  pretrained model of pwc and move it to 'pwc\weights\network-default.pytorch'<br>
 [baiduyun](https://pan.baidu.com/s/1Y-xtYy0tu4R2odvwmawpHw 
-)<br> keyword: kuh5
+)<br> password: kuh5
 <br>if you want to train from scratch you can choose not to download this and comment the **torch.load** but you may get very bad result. <br>
 3 change the variable **vimo_data_dir** in train_and_test.py  to 'path_to_your_dataset/vimeo_triplet'<br>
 

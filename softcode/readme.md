@@ -62,7 +62,7 @@ The code mainly include 3 parts <br>
          year = {2020}
      }
 ```
-[2] [pytorch-pwc](https://www.cnblogs.com/sevan232975) <br>
+[2] [pytorch-pwc](https://github.com/sniklaus/pytorch-pwc) <br>
 [3] [grid-net](https://github.com/daigo0927/GridNet)
 
 Many codes are from Niklaus.<br>

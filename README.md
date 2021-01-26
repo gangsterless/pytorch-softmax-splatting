@@ -27,10 +27,9 @@ you can clearly see some overlap and blur in the left.
 ## usage
 ### to simply test my code you should
 1 download my pretrained model from
-[baiduyun](https://pan.baidu.com/s/1Y-xtYy0tu4R2odvwmawpHw 
+[baiduyun](链接：https://pan.baidu.com/s/1IBZsjhQFM_QTlZTt9njDHQ 
 )<br>
-keyword: kuh5 <br>
-
+提取码：bp7w <br>
 2 run :
 ```
 python run_a_pair.py
@@ -38,7 +37,9 @@ python run_a_pair.py
 ### to train my code you should
 1 download Vimeo <br>
 2 download  pretrained model of pwc and move it to 'pwc\weights\network-default.pytorch'<br>
-[baiduyun]() <br>if you want to train from scratch you can choose not to download this and comment the **torch.load** but you may get very bad result. <br>
+[baiduyun](https://pan.baidu.com/s/1Y-xtYy0tu4R2odvwmawpHw 
+)<br> keyword: kuh5
+<br>if you want to train from scratch you can choose not to download this and comment the **torch.load** but you may get very bad result. <br>
 3 change the variable **vimo_data_dir** in train_and_test.py  to 'path_to_your_dataset/vimeo_triplet'<br>
 
 4  I didn't write args parser  for your convenience to revise my code. Change the settings as what you like in train_or_test.It 's very easy to revise. or just run as:

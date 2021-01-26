@@ -12,7 +12,7 @@ W = 448
 shape = [1,3,H,W]
 model = Main_net(shape).cuda().eval()
 with torch.no_grad():
-    model.load_state_dict(torch.load('weights/model_weight_20.pth'))
+    model.load_state_dict(torch.load('weights/model_weight_41.pth'))
     img_out = model(tenFirst,tenSecond)
     img_out = img_out.squeeze().detach().cpu().numpy().transpose(1,2,0)
     cv2.imshow('out',img_out)

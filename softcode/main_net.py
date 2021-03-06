@@ -92,7 +92,7 @@ class Main_net(nn.Module):
                                                     tenMetric=self.beta1 * tenMetric_ls_1to2[2],
                                                     strType='softmax')
 
-        tenMetric_2to1 = nn.functional.l1_loss(input=img2, target=backwarp(tenInput=img1, tenFlow=flow_1to2_pyri[0]),
+        tenMetric_2to1 = nn.functional.l1_loss(input=img2, target=backwarp(tenInput=img1, tenFlow=flow_2to1_pyri[0]),
                                                reduction='none').mean(1, True)
         tenMetric_2to1 = self.Matric_UNet(tenMetric_2to1, img2)
         tenMetric_ls_2to1 = self.scale_tenMetric(tenMetric_2to1)

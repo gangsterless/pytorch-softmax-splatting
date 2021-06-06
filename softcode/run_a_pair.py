@@ -12,12 +12,15 @@ W = 448
 shape = [1,3,H,W]
 model = Main_net(shape).cuda().eval()
 with torch.no_grad():
-    model.load_state_dict(torch.load('weights/model_weight_41.pth'))
+    net_state =  { strKey.replace('module.', ''): tenWeight for strKey, tenWeight in torch.load('weights/model_weight_48.pth')['net'].items()}
+    model.load_state_dict(net_state)
+   
     img_out = model(tenFirst,tenSecond)
     img_out = img_out.squeeze().detach().cpu().numpy().transpose(1,2,0)
     cv2.imshow('out',img_out)
     cv2.imshow('ground truth',gt)
-    cv2.waitKey(0)
+    while cv2.waitKey(0) & 0xFF == ord('q'): 
+       break
 
 
 

@@ -7,18 +7,19 @@ First apologize for my poor English
 
 This is a personal reimplementation of softsplatting [1] using PyTorch. The code is complete comparing with official code. That's to say it is trainable and I will provide a pretrained model later.
 
-Please NOTE that I am a beginner in deep learning especially in frame interpolation. And the most important thing is that I only have a 1060 GPU.(so poor right?) so my model is trained based on a subset of Vimeo90k including about 1600 triples. I am unable to train the whole dataset currently, so more test and criteria is not available now. And I am not so sure of some training details. 
+Please NOTE that I am a beginner in deep learning especially in frame interpolation. ***And the most important thing is that I only have a 1060 GPU  (so poor right?)*** The model is trained on REDS including about 240 scenes(100 images per scene and very large motion). I am unable to train the whole dataset currently, so more test and criteria is not available now. And I am not so sure of some training details.
+But this model **does deal with very large motions**<br>
+NOTE:  you may get very blur result when using my pretrained weight. That's because The amount of training data set is too small I highly recommend you train this model on whole Vimeo.  
+If you have trained  a better model, please contact me.
  
  But there are still some good news. I think it is easy for you to train and run your own model. Also, the code is purely python your can feel free of issues of cuda version,gcc version and platform(windows and linux both run well). Despite of shortage of test, my reimplementation looks at least plausible.
  # examples
  left is interpolation result and right is ground truth.<br/>some very good res.
 
- <p align="center"><img src="./example_img/test7.jpg" alt="Comparison"></p>
- <p align="center"><img src="./example_img/test4.jpg" alt="Comparison"></p>
+ <p align="center"><img src="./softcode/example_img/test7.jpg" alt="Comparison"></p>
+ <p align="center"><img src="./softcode/example_img/test4.jpg" alt="Comparison"></p>
 
-<br/>some bad res:
-<p align="center"><img src="./example_img/test10.jpg" alt="Comparison"></p>
-you can clearly see some overlap and blur in the left.
+
 
 ## environment
  I run in python36 cupy 10.1 in fact I think it can also run well in any version
@@ -27,8 +28,8 @@ you can clearly see some overlap and blur in the left.
 ## usage
 ### to simply test my code you should
 1 download my pretrained model from
-[baiduyun](https://pan.baidu.com/s/13qeFOQsrViCuskUWIdhVSQ)<br>
-password：4rtz <br>
+[baiduyun](https://pan.baidu.com/s/1rMzwHrhiZofZTkt1VrHqpQ)<br>
+password：l4gz <br>
 2 run :
 ```
 python run_a_pair.py

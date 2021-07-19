@@ -30,6 +30,7 @@ If you have trained  a better model, please contact me.
 1 download my pretrained model from
 [baiduyun](https://pan.baidu.com/s/1rMzwHrhiZofZTkt1VrHqpQ)<br>
 password：l4gz <br>
+[google drive](https://drive.google.com/file/d/1sX8vZ90XANk_WOdmspWcZiz6T4pmrjo_/view?usp=sharing)
 2 run :
 ```
 python run_a_pair.py
